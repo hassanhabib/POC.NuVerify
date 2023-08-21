@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Brokers\APIs\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RESTFulSense" Version="2.15.0" />
+    <PackageReference Include="Standard.AI.OpenAI" Version="0.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="nuget.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
